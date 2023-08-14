@@ -1,0 +1,143 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family:sans-serif;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #f48840;
+	position: relative;
+	flex-direction:column;
+}
+.link{
+	/*position: absolute;*/
+	top:20px;
+	left: 20px;
+	background:#fff;
+	text-decoration: 0;
+	padding: 10px 25px;
+	border-radius: 6px;
+	color:#f48840;
+}
+.error{
+	color: rgb(236,90,90);
+	text-align: center;
+	font-size: 14px;
+	transition: 0.5s;
+	animation: anime 0.5s ease-out;
+	margin-bottom: 20px;
+}
+/* Error animation*/
+
+@keyframes animes{
+	from{
+		transform: translateY(-50px);
+	}
+}
+form{
+	background-color:#fff;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border-radius: 6px;
+	width: 350px;
+
+}
+label{
+	margin-bottom:10px;
+}
+::-webkit-file-upload-button{
+	background:#f48840;
+	padding: 5px 25px;
+	color:#fff;
+	border-radius: 6px;
+	border: 0;
+	cursor: pointer;
+}
+input textarea{
+	margin-bottom:7px;
+	padding: 10px;
+	resize: none;
+	outline: 0;
+	border-radius:6px;
+}
+input[type='file']{
+	padding: 10px 0;
+}
+form input[type='submit']{
+	background-color:  #f48840;
+	border: 0;
+	color: #fff;
+	margin-top: 15px;
+	padding: 6px 0;
+
+}
+/* listes css*/
+
+section{
+	margin-top:100px;
+	display:grid;
+	grid-template-columns: repeat(auto-fit,20rem);
+	justify-content: center;
+	padding: 20px;
+	margin-bottom: 50px;
+	width: 100%;
+	grid-gap:20px;
+}
+.box{
+	width:320px;
+	background-color:#fff;
+	padding:10px;
+	border-radius:4px;
+	position: relative;
+	min-height:500px;
+	
+}
+.box div{
+	font-size: 13px;
+	margin-top:10px;
+
+	
+}
+
+.img_principal{
+	width: 100%;
+	height:320px;
+	object-fit: cover;
+	
+}
+	
+.delete_btn{
+	display: inline-block;
+	background-color:red;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 12px 20px;
+	text-transform: uppercase;
+	transition: all .3s;
+	text-decoration: none;
+}
+.delete_btn img{
+	width: 40px;
+	height: 40px;
+}
+
+.vide_message{
+	font-size:15px;
+	color: white;
+}
+.main-button  {
+	display: inline-block;
+	background-color: #f48840;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	padding: 12px 20px;
+	text-transform: uppercase;
+	transition: all .3s;
+}
